@@ -5,10 +5,10 @@ class ResponsesController < ApplicationController
   # GET /responses.json
   def index
     @responses = Response.all
-    @responses_forget = Response.count(:forget)
-    @responses_medical = Response.count(:medical)
-    @responses_allowance = Response.count(:allowance)
-    @responses_other = Response.count(:other)
+    @responses_forget = @responses.where(forget: true).count
+    @responses_medical = @responses.where(medical: true).count
+    @responses_allowance = @responses.where(allowance: true).count
+    @responses_other = @responses.where(other: true).count
 
   end
 
