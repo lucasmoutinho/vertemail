@@ -25,6 +25,12 @@
         <td><%= link_to 'Destroy', response, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+    <tr>
+      <td><%= @responses_forget%></td>
+      <td><%=@responses_medical%></td>
+      <td><%=@responses_allowance%></td>
+      <td><%=@responses_other%></td>
+    </tr>
   </tbody>
 </table>
 
