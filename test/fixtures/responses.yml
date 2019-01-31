@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  forget: false
+  medical: false
+  allowance: false
+  other: false
+
+two:
+  forget: false
+  medical: false
+  allowance: false
+  other: false

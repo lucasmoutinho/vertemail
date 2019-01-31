@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Forget:</strong>
+  <%= @response.forget %>
+</p>
+
+<p>
+  <strong>Medical:</strong>
+  <%= @response.medical %>
+</p>
+
+<p>
+  <strong>Allowance:</strong>
+  <%= @response.allowance %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @response.other %>
+</p>
+
+<%= link_to 'Edit', edit_response_path(@response) %> |
+<%= link_to 'Back', responses_path %>
